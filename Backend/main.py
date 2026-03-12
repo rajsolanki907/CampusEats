@@ -11,7 +11,7 @@ from typing import List
 app = FastAPI()
 
 app.add_middleware(
-    CORSMiddleware  ,
+    CORSMiddleware,
     allow_origins=config.CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
